@@ -1,0 +1,11 @@
+groups:
+- name: react-app-alerts
+  rules:
+  - alert: ReactAppDown
+    expr: probe_success == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "React app is down"
+      description: "React app at {{ $labels.instance }} is not responding."

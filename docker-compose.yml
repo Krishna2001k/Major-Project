@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  guvi-test:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: guvitask:01
+    ports:
+      - "80:3000"
+    restart: always

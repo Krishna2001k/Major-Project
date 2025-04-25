@@ -1,0 +1,11 @@
+route:
+  receiver: email-notifications
+receivers:
+- name: email-notifications
+  email_configs:
+  - to: koganti.krishna75@gmail.com
+    from: koganti.krishna75@gmail.com
+    smarthost: smtp.gmail.com:587
+    auth_username: koganti.krishna75@gmail.com
+    auth_password: mxlq cgfn rpry nvnd
+    require_tls: true
